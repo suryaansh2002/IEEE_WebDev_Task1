@@ -61,6 +61,11 @@
 	background-image:linear-gradient( to right ,#7833cc,#7833cc);
 	color:white;
 }
+.typewriter{
+	width: 70px;
+	height: 70px;
+	margin-left: -50px;
+}
 .view:hover{
 	background-color: #7833cc;
 	border-radius: 10px;
