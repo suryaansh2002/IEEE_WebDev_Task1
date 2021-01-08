@@ -242,8 +242,11 @@ footer{
 		text-align: center;
 	}
 	
-
-	.button{
+	#main1,#main2{
+		padding-bottom: 45px;
+		padding-top: 45px;
+	}
+.button{
 	border-radius: 30px;
 	padding-left:80px;
 	padding-right:80px;
