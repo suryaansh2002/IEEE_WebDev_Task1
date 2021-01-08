@@ -242,11 +242,16 @@ footer{
 		text-align: center;
 	}
 	
-	#main1,#main2{
-		padding-bottom: 45px;
-		padding-top: 45px;
+	footer{
+		padding-right: 15px;
 	}
-.button{
+	.main{
+		margin-right: 0px;
+	}
+	.box{
+		margin-right: 0px;
+	}
+	.button{
 	border-radius: 30px;
 	padding-left:80px;
 	padding-right:80px;
@@ -257,8 +262,7 @@ footer{
 	color: white;
 	font-size: 20px;
 	border: none;
-
-}
+	}
 }
 @media screen and (max-width: 440px){
 	.text1{
