@@ -216,3 +216,28 @@ footer{
 	font-size: 14px;
 
 }
+@media screen and (max-width: 1000px){
+	
+	.col-lg-3,.col-lg-2, .col-lg-5{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 768px){
+	.text1{
+		font-size: 50%;
+	}
+	#dot{
+		height: 20px;
+		width: 20px;
+		margin-left: -10px;
+	}
+	.typewriter{
+		visibility: hidden;
+	}
+	.box{
+		padding-left: 25%;
+	}
+	.col-lg-3, .col-lg-2, .col-lg-5{
+		text-align: center;
+	}
+}
