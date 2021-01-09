@@ -14,7 +14,7 @@
 	transition: 1s;
 }
 #slide:hover #main1{
-	padding-right: 50px;
+	padding-right: 80px;
 	transition: 1s;
 }
 
@@ -22,13 +22,14 @@
 	padding-top: 90px;
 	padding-bottom:90px;
 	background-color: #7833cc;
+	height: 100%;
 	width: 50%;
 	color: white;
 	font-family: "Roboto";
 	font-weight: bold;
 	text-align: right;
 	vertical-align: middle;
-	font-size: 140px;
+	font-size: 130px;
 	float: left;
 	padding-right: 30px;
 
@@ -44,14 +45,12 @@
 	font-family: "Roboto";
 	text-align: left;
 	vertical-align: middle;
-	font-size: 140px;
+	font-size: 130px;
 	float: left;
 	padding-left: 20px;
 
 }
 #main3{
-	padding-top: 130px;
-	padding-bottom:122.5px;
 	background-color: #7833cc;
 	width: 50%;
 	margin-left: -50%;
@@ -60,6 +59,8 @@
 	text-align: center;
 	visibility: hidden;
 	padding-left: 10%;
+	padding-top: 120px;
+	height: 100%
 
 }
 
@@ -264,7 +265,7 @@ footer{
 		text-align: center;
 	}
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 810px){
 	.text1{
 		font-size: 60px;
 	}
