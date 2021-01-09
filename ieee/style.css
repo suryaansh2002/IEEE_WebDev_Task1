@@ -1,9 +1,14 @@
+body{
+	overflow-x: hidden;
+}
 .main{
 	margin-left: 50px;
+
 }
 #slide{
 	width: 100%;
 }
+
 #slide:hover{
 	margin-left: 50%;
 	margin-right: -50%;
@@ -22,7 +27,6 @@
 	padding-right: 80px;
 	transition: 1s;
 }
-
 
 #main1{
 	padding-top: 90px;
@@ -278,7 +282,6 @@ footer{
 	.text1{
 		font-size: 60px;
 	}
-
 	#dot{
 		height: 20px;
 		width: 20px;
@@ -287,15 +290,10 @@ footer{
 	.typewriter{
 		visibility: hidden;
 	}
-	.box{
-		padding-left: 25%;
-		margin-right: 0px;	
-	}
 
 
 	#links{
-		margin-left: 20px;
-		margin-right: 10px;
+		margin-left: 50px;
 	}
 
 	.main{
@@ -315,7 +313,15 @@ footer{
 	font-size: 20px;
 	border: none;
 	}
-	
+	#about{
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+	.box{
+		padding-left: 15%;
+		padding-right: 0px;
+	}
 	#slide:hover{
 		margin: 0%;
 	}
