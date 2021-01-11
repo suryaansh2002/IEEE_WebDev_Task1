@@ -1,6 +1,125 @@
+/*Nav-Bar*/
+.header{
+	height: 50px;
+	background-color: white;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+}
+img{
+	width: auto;
+	height: 50px;
+}
+input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  appearance: none;
+  position: fixed;
+}
+
+label {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+label span {
+  display: block;
+  width: 100%;
+  background: #7833cc;
+  height: 2px;
+  transition: transform 1s;
+}
+
+label span::before,
+label span::after {
+  content: "";
+  position: absolute;
+  float: left;
+  width: 30px;
+  left: 0;
+  right: 0;
+  display: block;
+  height: 2px;
+  margin-bottom: 5px;
+  background: #7833cc;
+  transition: 0.4s
+}
+
+label span::before {
+  top: 0;
+}
+
+label span::after {
+  top: calc(100% - 2px);/* to make the transition easier :) */
+}
+
+ul {
+	text-align: center;
+  position: fixed;
+  margin-top: 0px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  transform: translateX(200%) rotate(90deg);
+  transition: transform 0.2s;
+  background: #7833cc;
+  z-index: 5;
+  list-style: none;
+  line-height: 1.3;
+}
+
+li a:hover{
+	background-color: #550eab;
+	padding:20px;
+	border-radius: 5px;
+	text-decoration: none;
+	color: white;
+}
+ul a{
+  text-decoration: none;
+  color: white;
+  font-family: Arial;
+  font-size: 70px;
+}
+
+
+
+input:checked + label span {
+  transform: rotate(45deg);
+}
+
+input:checked + label span::before, input:checked + label span::after {
+  background-color: white;
+  top: calc(50% - 1px);
+  transition: 0.4s;
+}
+input:checked + label span::after {
+  background-color: white;
+  transform: rotate(90deg);
+}
+
+input:checked ~ ul {
+  transform: none;
+  transition: transform 0.4s;
+}
+
 body{
 	overflow-x: hidden;
 }
+/*Main Div*/
 .main{
 	margin-left: 50px;
 
@@ -9,6 +128,7 @@ body{
 	width: 100%;
 }
 
+/*Slider in Main Div*/
 #slide:hover{
 	margin-left: 50%;
 	margin-right: -50%;
@@ -21,7 +141,7 @@ body{
 }
 #slide:hover .left{
 	position: absolute;
-	z-index: 2;
+	z-index: 999;
 }
 #slide:hover #main1{
 	padding-right: 80px;
@@ -92,7 +212,7 @@ body{
   display: inline-block;
 }
 
-
+/*Donate Button*/
 .button{
 	border-radius: 30px;
 	padding-left:100px;
@@ -118,6 +238,7 @@ body{
 	height: 70px;
 	margin-left: -50px;
 }
+/*Box and Contact Cards*/
 .view:hover{
 	background-color: #7833cc;
 	border-radius: 10px;
@@ -128,7 +249,6 @@ body{
 .view a:hover{
 	color: white;
 }
-
 .box{
 	width: 100%;
 	margin-bottom: 10px;
@@ -143,7 +263,7 @@ body{
 .contact{
 	background-color: white;
 	margin-left: 20px;
-	margin-right: 10px;
+	margin-right: 12px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 	border-radius: 5px;
@@ -152,6 +272,9 @@ body{
 	float: left;
 	width: 14%;
 	min-width: 200px;
+}
+.contact:hover{
+	box-shadow: 2px 2px 2px 2px grey;
 }
 .card_image{
 	border-radius: 50%;
@@ -199,10 +322,12 @@ body{
 	width: 20%;
 	min-width: 200px;
 }
-
+/*Side Bar with Icons*/
 .left{
 	width: 50px;
 	color: #7833cc;
+	z-index: 10;
+	height: auto;
 }
 .icons{
 	position: fixed;
@@ -212,13 +337,9 @@ body{
 
 }
 
-.hey{
-	margin:-10px;
-}
-
+/*Footer*/
 footer{
 	background-color: white;
-	height: 200px;
 	text-align: center;
 }
 .col-lg-5{
@@ -268,7 +389,7 @@ footer{
 	font-size: 14px;
 
 }
-
+/*Media Queries*/
 @media screen and (max-width: 1000px){
 	
 	.col-lg-3,.col-lg-2, .col-lg-5{
@@ -281,6 +402,9 @@ footer{
 @media screen and (max-width: 810px){
 	.text1{
 		font-size: 60px;
+	}
+	ul a{
+		font-size: 40px;
 	}
 	#dot{
 		height: 20px;
